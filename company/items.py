@@ -7,8 +7,9 @@
 
 import scrapy
 
-
-class CompanyItem(scrapy.Item):
+class CompanyListItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    legal_people = scrapy.Field()
+    email = scrapy.Field()
+    address = scrapy.Field()

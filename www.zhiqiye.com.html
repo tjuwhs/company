@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>知企业 - 中国最齐全的企业数据库！查企业，找知企业网</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="keywords" content="知企业网,企业搜索,产业地图,投资轨迹,企业投资动因分析,外资企业在华投资报告,全国工商企业数据库,联系方式" />
+    <meta name="description" content="知企业网是一个致力于为广大用户提供可靠、高效的企业信息服务平台，主要提供企业相关资讯、企业投资报告、行业分析报告、投资动因分析等信息服务,所有投资报告、企业名单、行业分析报告每天更新,均属原创内容。" />
+    <link rel="stylesheet" type="text/css" href="http://www.zhiqiye.com/Content/css/style.css?time=1426235064089" />
+    
+    <style type="text/css">
+        #spanShow span
+        {
+            padding: 0 0;
+            margin: 0 5px;
+        }
+        .spanclick
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="column">
+                <ul>
+                    <li><a href="/" title="首页">首页</a></li>
+                    <li><a href="/report/list/1.html" title="在华投资">
+                        在华投资</a></li>
+                    <li><a href="/report/global/1.html" title="走出去">
+                        走出去</a></li>
+                    <li><a href="/article/list/1.html" title="走出去">
+                        资讯</a></li>
+                    <li><a href="/manage.html" target="_blank" title="招引系统" style="padding-right: 0px;">
+                        招引系统</a></li>
+                    <li><a href="/web.html" target="_blank" title="网站开发" style="padding-right: 0px;">网站开发</a></li>
+                    <li><a href="http://map.zhiqiye.com/" target="_blank" title="产业地图" style="padding-right: 0px;">
+                        产业地图</a></li>
+                    <li id="mapLi">
+                            <a href="javascript:alert('请先登录！')" title="产业地图体验" style="padding-right: 0px;">产业地图体验</a><span
+                                class="hot">热</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <div class="loginbar">
+                    <img id="menent" class="markevent" width="21px" height="19px" onclick="showMzsm();" src="http://www.zhiqiye.com/Content/images/mark-bg.png"
+                        alt="知企业网是一个致力于为广大用户提供可靠、高效的企业信息服务平台，主要提供企业相关资讯、企业投资报告、行业分析报告、投资动因分析等信息服务,所有投资报告、企业名单、行业分析报告每天更新,均属原创内容。" title="免责说明" />
+                    <span>ENG</span> <span id="spanLogin">
+                        <img src="http://www.zhiqiye.com/Content/images/avatar-bg.png" alt="未登录状态" title="未登录状态" width="29px" height="29px" />
+                        <a class="loginevent" href="javascript:show()">登&nbsp;录</a> <a class="regsiter" href="/account/register/">
+                            注&nbsp;册</a></span> <span id="spanShow"></span>
+                    <div id="divMZSM" class="mzsm" style="display: none; z-index: 1000;">
+                        <img src="http://www.zhiqiye.com/Content/images/dash.png" width="15px" height="7px" alt="免责声明" title="免责声明" style="position: absolute; left: 50%; top: -7px;" />
+                        <p class="sm">
+                            <strong>免责说明：</strong> 知企业平台所有内容均来源于互联网，广东大晋对接信息科技有限公司不承担任何法律风险。
+                        </p>
+                        <p class="xq">
+                            <a href="/LegalStatement.html" target="_blank" title="免责声明">
+                                了解详情>></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+    <div class="index_search">
+        <img src="http://www.zhiqiye.com/content/images/logo.png" width="257" alt="知企业Logo" title ="知企业Logo"
+                        height="78" />
+        <p class="search-nv" id="search-nv">
+        <a href="javascript:;" onclick="javascript:selectType(0)" class="searchType on">全部</a> 
+        <a href="javascript:;" onclick="javascript:selectType(1)" class="searchType">公司名称</a>
+        <a href="javascript:;" onclick="javascript:selectType(2)" class="searchType">联系人</a>
+        <a href="javascript:;" onclick="javascript:selectType(3)" class="searchType">产品</a>
+        <a href="javascript:;" onclick="javascript:selectType(4)" class="searchType">地址</a>
+</p>
+<div class="main-search">
+    <form id="searchForm" name="searchForm" method="get" action="/search/list">
+         <label class="msg" id="searchEntCount" onclick="hideSearchMsg()">
+            在知企业检索全中国<strong>3373105</strong>家企业信息</label>
+    <input type="text" class="stylew" id="kwd" name="kwd" value="" onfocus="hideSearchMsg()" onblur="showSearchMsg()" />
+        <input type="hidden" id="sType" name="sType" value="0" />
+    <input class="btn_wr" id="btnSerach" type="submit" value="提交查询内容" />
+    </form>
+</div>
+
+        <div class="hot-search">
+            <span style="color: #ff0000;">热门搜索：</span> 
+                <a href="/search/list?kwd=%E5%B9%BF%E5%B7%9E%E6%B1%BD%E8%BD%A6%E9%9B%86%E5%9B%A2%E4%B9%98%E7%94%A8%E8%BD%A6%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;sType=1" title="广州汽车集团乘用车有限公司" target="_blank">广汽集团</a>
+                <a href="/search/list?kwd=%E4%B8%8A%E6%B5%B7%E5%B7%A8%E4%BA%BA%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;sType=1" title="上海巨人网络科技有限公司" target="_blank">巨人网络</a>
+                <a href="/search/list?kwd=%E8%91%A3%E6%98%8E%E7%8F%A0&amp;sType=2" title="董明珠" target="_blank">董明珠</a>
+                <a href="/search/list?kwd=%E6%B2%B3%E5%8C%97%E9%92%A2%E9%93%81%E9%9B%86%E5%9B%A2%E9%BE%99%E6%B5%B7%E9%92%A2%E9%93%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;sType=1" title="河北钢铁集团龙海钢铁有限公司" target="_blank">龙海钢铁</a>
+                <a href="/search/list?kwd=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8&amp;sType=1" title="小米科技有限责任公司" target="_blank">小米</a>
+                <a href="/search/list?kwd=%E4%B8%AD%E5%9B%BD%E5%B9%BF%E6%A0%B8%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&amp;sType=1" title="中国广核集团有限公司" target="_blank">中广核</a>
+        </div>
+    </div>
+    <div class="entList">
+        <div class="lastEnt" style="margin-left: 140px;">
+            <div class="entHeader">
+                <h2>
+                    最近更新企业</h2>
+                <a href="/r-new/0049000000000000_1.html"  title="更多最新企业名录" target="_blank">
+                    更多</a>
+            </div>
+            <ul>
+                    <li><a href="/company/D104C914A5E140E8A190C138C1BBB484/index.html" title="西安恒健医疗科技有限公司" target="_blank">西安恒健医疗科技有限公司</a>
+                        <span>16/06/17</span></li>
+                    <li><a href="/company/186A91E164D64C79B14D70535DC86BB9/index.html" title="深圳市新建兴进出口有限公司" target="_blank">深圳市新建兴进出口有限公司</a>
+                        <span>16/06/17</span></li>
+                    <li><a href="/company/01FF7BCA7729489FA720E0B32E7534A1/index.html" title="上海乾脉网络科技有限公司" target="_blank">上海乾脉网络科技有限公司</a>
+                        <span>16/05/12</span></li>
+                    <li><a href="/company/610C8F09E41F4C3190EFA3F5C03688CC/index.html" title="北京蓝创众合信息技术有限公司" target="_blank">北京蓝创众合信息技术有限公司</a>
+                        <span>16/04/25</span></li>
+                    <li><a href="/company/6210EA34DF284C7B9DBE52022A0FAE1C/index.html" title="哈尔滨市宏伟刃具厂" target="_blank">哈尔滨市宏伟刃具厂</a>
+                        <span>16/04/19</span></li>
+            </ul>
+        </div>
+        <div class="lastEnt" style="margin-left: 100px;">
+            <div class="entHeader">
+                <h2>
+                    企业资讯&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <a href="/article/list/1.html" title="最新企业资讯" target="_blank">
+                    更多</a>
+            </div>
+            <ul>
+                    <li><a href="/article/74150.html" title="瓷砖行业面临洗牌 龙头企业“重仓”高端产品线" target="_blank">瓷砖行业面临洗牌 龙头企业“重仓”高端产品线</a>
+                        <span>16/07/28</span></li>
+                    <li><a href="/article/74152.html" title="言出必行 中国已帮助加纳改造了一项科研利器" target="_blank">言出必行 中国已帮助加纳改造了一项科研利器</a>
+                        <span>16/07/28</span></li>
+                    <li><a href="/article/74149.html" title="深圳上半年保费收入471.94亿元  同比增长37.33%" target="_blank">深圳上半年保费收入471.94亿元  同比增长37.33%</a>
+                        <span>16/07/28</span></li>
+                    <li><a href="/article/74148.html" title="中国军方回应郭伯雄受贿案：无论职位多高绝不姑息" target="_blank">中国军方回应郭伯雄受贿案：无论职位多高绝不姑息</a>
+                        <span>16/07/28</span></li>
+                    <li><a href="/article/74151.html" title="受油气价格疲软冲击 壳牌第二季度获利骤降逾70%" target="_blank">受油气价格疲软冲击 壳牌第二季度获利骤降逾70%</a>
+                        <span>16/07/28</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="entList">
+        <div class="lastEnt" style="margin-left: 140px;">
+            <div class="entHeader">
+                <h2>
+                    在华投资报告</h2>
+                <a href="/report/list/1.html"  title="更多在华投资报告列表" target="_blank">
+                    更多</a>
+            </div>
+            <ul>
+                    <li><a href="/report/0FB02CCD92F0478690F179C62AC2C621.html" title="香港立德洋行在华投资报告" style="width:260px" target="_blank">香港立德洋行在华投资报告</a></li>
+                    <li><a href="/report/B04C74E4C1694EE7B214EC3126CEC0CD.html" title="王春辉在华投资报告" style="width:260px" target="_blank">王春辉在华投资报告</a></li>
+                    <li><a href="/report/ECA69CD77AA540CEA5F6D307CA2E20BD.html" title="香港佳诚发展有限公司在华投资报告" style="width:260px" target="_blank">香港佳诚发展有限公司在华投资报告</a></li>
+                    <li><a href="/report/8FA190E36E3A47D9B2D9A3E18E8AC0A8.html" title="广东东阳光铝业股份有限公司在华投资报告" style="width:260px" target="_blank">广东东阳光铝业股份有限公司在华投资报告</a></li>
+                    <li><a href="/report/9FA9A329F72C4064AD34AE6FF0E6049B.html" title="香港永得公司在华投资报告" style="width:260px" target="_blank">香港永得公司在华投资报告</a></li>
+            </ul>
+        </div>
+        <div class="lastEnt" style="margin-left: 100px;">
+            <div class="entHeader">
+                <h2>
+                    走出去&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <a href="/report/global/1.html" title="更多走出去投资报告" target="_blank">
+                    更多</a>
+            </div>
+            <ul>
+                    <li><a href="/global/76B62F00BCF6412AB9D14F0A95F6D1A0.html" title="航天长征国际贸易有限公司境外投资报告" target="_blank">航天长征国际贸易有限公司</a>
+                        <span>16/06/17</span></li>
+                    <li><a href="/global/88EC9621CA5C4F5E9EB41B3967BDE937.html" title="宁波润裕食品有限公司境外投资报告" target="_blank">宁波润裕食品有限公司</a>
+                        <span>16/06/16</span></li>
+                    <li><a href="/global/714E2544A77C439696D4423337C0B508.html" title="临澧县湘桂汽车出租有限责任公司境外投资报告" target="_blank">临澧县湘桂汽车出租有限责任公司</a>
+                        <span>16/06/16</span></li>
+                    <li><a href="/global/FC554E409D3C4A20915D7FEA21E16FB4.html" title="中色十二冶金建设有限公司境外投资报告" target="_blank">中色十二冶金建设有限公司</a>
+                        <span>16/06/16</span></li>
+                    <li><a href="/global/24F86625DB89478AA8BE85539E5F652A.html" title="深圳市美联国际教育科技有限公司境外投资报告" target="_blank">深圳市美联国际教育科技有限公司</a>
+                        <span>16/06/16</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div id="divLogin" class="login-page">
+            <h3 class="hd" id="LoginTitle">
+                账号登录</h3>
+            <form class="bd" id="loginForm">
+            <!-- 帐号 -->
+            <div class="ipt ipt-t user showPlaceholder" id="idInputLine">
+                <input type="text" id="userNameIpt" value="账号" onblur="nameBlur()" onfocus="nameFocus()" />
+            </div>
+            <!-- 密码 -->
+            <div class="ipt ipt-t pass showPlaceholder" id="pwdInputLine">
+                <input type="password" name="password" id="pwdInput" onfocus="passFocus()" onblur="passBlur()" />
+                <label for="pwdInput" class="placeholder" id="pwdPlaceholder">
+                    密码</label>
+            </div>
+            <!-- 相关选项 -->
+            <div class="options">
+                <label for="rmbUser" class="ipt-wraper ipt-wraper-checked">
+                    <input tabindex="5" type="checkbox" class="ipt ipt-c" id="rmbUser" />下次自动登录
+                </label>
+                <a class="ext" href="#" title="" id="forGetPassword" target="_blank">忘记密码?</a>
+            </div>
+            <span id="loginBnt" style="cursor: pointer" onclick="doLogin()">登录</span>
+            <p class="ljzc">
+                <a href="#">立即注册</a>
+            </p>
+            <div class="share">
+                <span>可以使用以下方式登录</span>
+                <img src="http://www.zhiqiye.com/Content/images/qq.jpg" width="21px" height="21px" alt="QQ登录" title="QQ登录" />
+                <img src="http://www.zhiqiye.com/Content/images/xl.jpg" width="21px" height="21px" alt="微博登录" title="微博登录" />
+                <img src="http://www.zhiqiye.com/Content/images/wx.jpg" width="21px" height="21px" alt="微信登录" title="微信登录" />
+            </div>
+            </form>
+            <span id="close" onclick="doClose()">
+                <img src="http://www.zhiqiye.com/Content/images/close.jpg" width="21px" height="21px" alt="关闭"
+                title="关闭" />
+            </span>
+        </div>
+        <div class="clear">
+            <!-- 必不可少 -->
+        </div>
+        <div id="divZG" class="mark">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bottom_links">
+            <ul>
+                <li><a href="/about.html" target="_blank" title="关于我们">
+                    关于我们</a>|</li>
+                <li><a href="/activity.html" target="_blank" title="平台服务">
+                    平台服务</a>|</li>
+                <li><a href="/legalstatement.html" target="_blank" title="免责声明">
+                    免责声明</a>| </li>
+                <li><a href="/helper.html" target="_blank" title="帮助中心">
+                    帮助中心</a>|</li>
+                <li><a href="/contact.html" target="_blank" title="联系我们">
+                    联系我们</a>|</li>
+                <li><a href="/suggest.html" target="_blank" title="意见建议">
+                    意见建议</a> </li>
+            </ul>
+        </div>
+        <!--bottom_links-end-->
+        <div class="row_2">
+            <span>&copy; 2012 版权所有</span> <span>穗公网监备案证第4401060103325号</span> <span>粤B2-20120272</span>
+            <span>粤ICP备12014823号</span>
+        </div>
+    </div>
+</body>
+</html>
+<script language="javascript" type="text/javascript" src="http://www.zhiqiye.com/Scripts/fdibase.js?time=1426235064089"></script>
+
